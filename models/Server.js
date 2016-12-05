@@ -20,7 +20,7 @@ const serverSchema = new Schema({
 	debug:    { type: Boolean },
 	beta:     { type: Boolean },
 	vip:      { type: Boolean },
-});
+}, { strict: false });
 
 /**
  * Server model
