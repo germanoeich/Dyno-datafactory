@@ -8,7 +8,7 @@ const moderationSchema = new Schema({
 	userid:      { type: String, required: true, index: true },
 	channel:     { type: String, required: true },
 	user:        { type: Object, required: true },
-	mod:         { type: String, required: true },
+	mod:         { type: String },
 	type:        { type: String, required: true },
 	createdAt:   { type: Date, default: Date.now },
 	completedAt: { type: Date, required: true, index: true },
