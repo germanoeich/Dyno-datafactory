@@ -10,6 +10,7 @@ const dynoSchema = new Schema({
 	webhooks:   { type: Array,  default: []  },
 	testGuilds: { type: Array,  default: []  },
 	betaGuilds: { type: Array,  default: []  },
-});
+	dashAccess: { type: Array,  default: []  },
+}, { strict: false });
 
 module.exports = mongoose.model('Dyno', dynoSchema);
