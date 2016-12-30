@@ -19,7 +19,7 @@ const queueItemSchema = new Schema({
  * @type {"mongoose".Schema}
  */
 const queueSchema = new Schema({
-	guild:    { type: String },
+	guild:    { type: String, index: true },
 	name:     { type: String },
 	queue:    [queueItemSchema],
 	creator:  { type: Object },
