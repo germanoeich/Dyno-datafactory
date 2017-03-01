@@ -32,9 +32,9 @@ class ServerSchema {
 			this.findOne({ _id: id })
 				.populate('permissions')
 				.exec()
+				.catch(reject)
 				.then(doc => {
 					if (!doc) return resolve();
-					
 					return resolve(doc.format());
 				});
 		});

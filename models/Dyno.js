@@ -11,6 +11,9 @@ const dynoSchema = new Schema({
 	testGuilds: { type: Array,  default: []  },
 	betaGuilds: { type: Array,  default: []  },
 	dashAccess: { type: Array,  default: []  },
+	raidAccounts: { type: Array, default: [] },
+	globalBans: { type: Array, default: [] },
+	ignoredUsers: { type: Array, default: [] },
 }, { strict: false });
 
 module.exports = mongoose.model('Dyno', dynoSchema);
