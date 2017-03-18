@@ -37,6 +37,7 @@ node_modules
 
 .env
 private
+.idea
 .vscode
 .DS_Store
 jsconfig.json

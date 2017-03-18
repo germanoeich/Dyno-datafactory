@@ -18,6 +18,7 @@ class ServerSchema {
 			debug:    { type: Boolean },
 			beta:     { type: Boolean },
 			vip:      { type: Boolean },
+			newAccThreshold: { type: Number, default: 2 },
 			permissions: [{ type: Schema.Types.ObjectId, ref: 'Permissions' }],
 		}, { strict: false });
 
