@@ -9,7 +9,7 @@ const streamAlertSchema = new Schema({
 	channel: { type: String, required: true },
 	guild: { type: String, required: true, index: true },
 	user: { type: Object, required: true },
-	active: { type: Boolean, default: false },
+	streaming: { type: Boolean, default: false },
 }, { strict: false });
 
 module.exports = mongoose.model('StreamAlert', streamAlertSchema);
