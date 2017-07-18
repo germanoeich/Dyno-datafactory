@@ -9,9 +9,10 @@ const moderationSchema = new Schema({
 	channel:     { type: String, required: true },
 	user:        { type: Object, required: true },
 	mod:         { type: String },
+	role:        { type: String },
 	type:        { type: String, required: true },
 	createdAt:   { type: Date, default: Date.now },
-	completedAt: { type: Date, required: true, index: true },
+	completedAt: { type: Date, index: true },
 });
 
 module.exports = mongoose.model('Moderation', moderationSchema);

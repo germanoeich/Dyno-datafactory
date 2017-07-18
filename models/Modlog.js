@@ -11,7 +11,7 @@ const modLogSchema = new Schema({
   type:        { type: String, required: true },
   reason:      { type: String },
   message:     { type: String },
-  createdAt:   { type: Date, default: Date.now, expires: '30d' },
+  createdAt:   { type: Date, default: Date.now },
 }, { strict: false });
 
 module.exports = mongoose.model('ModLog', modLogSchema);
