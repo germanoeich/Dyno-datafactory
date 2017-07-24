@@ -1,17 +1,17 @@
 {
-  "name": "Dyno-DataFactory",
+  "name": "Dyno-datafactory",
   "version": "1.0.0",
-  "homepage": "https://github.com/Da-Vinci/Dyno-DataFactory",
+  "homepage": "https://github.com/FlexLabs/Dyno-datafactory",
   "author": {
     "name": "Brian Tanner",
     "email": "brian@tanner.io"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/Da-Vinci/Dyno-DataFactory.git"
+    "url": "https://github.com/FlexLabs/Dyno-datafactory.git"
   },
   "bugs": {
-    "url": "https://github.com/Da-Vinci/Dyno-DataFactory/issues"
+    "url": "https://github.com/FlexLabs/Dyno-datafactory/issues"
   },
   "main": "index.js",
   "private": true,
