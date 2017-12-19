@@ -29,6 +29,14 @@ class DataFactory {
 					connectTimeoutMS: 30000,
 				},
 			},
+			replset: {
+				socketOptions: {
+						keepAlive: 1,
+						connectTimeoutMS : 30000 ,
+						socketTimeoutMS: 90000,
+				},
+				rs_name: 'dyno',
+			},
 			promiseLibrary: global.Promise,
 		});
 
