@@ -14,4 +14,4 @@ const modLogSchema = new Schema({
   createdAt:   { type: Date, default: Date.now },
 }, { strict: false });
 
-module.exports = mongoose.model('ModLog', modLogSchema);
+module.exports = { name: 'ModLog', schema: modLogSchema }

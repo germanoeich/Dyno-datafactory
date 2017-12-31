@@ -8,4 +8,4 @@ const commandSchema = new Schema({
 	_state: { type: Number, index: true },
 }, { strict: false });
 
-module.exports = mongoose.model('Command', commandSchema);
+module.exports = { name: 'Command', schema: commandSchema }

@@ -65,4 +65,4 @@ class ServerSchema {
  * Server model
  * @type {"mongoose".Model<serverSchema>}
  */
-module.exports = mongoose.model('Server', new ServerSchema());
+module.exports = { name: 'Server', schema: new ServerSchema() }

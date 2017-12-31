@@ -12,4 +12,4 @@ const streamAlertSchema = new Schema({
 	streaming: { type: Boolean, default: false },
 }, { strict: false });
 
-module.exports = mongoose.model('StreamAlert', streamAlertSchema);
+module.exports = { name: 'StreamAlert', schema: streamAlertSchema }

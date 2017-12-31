@@ -8,4 +8,4 @@ const moduleSchema = new Schema({
 	_state: { type: Number, index: true },
 }, { strict: false });
 
-module.exports = mongoose.model('Module', moduleSchema);
+module.exports = { name: 'Module', schema: moduleSchema }
