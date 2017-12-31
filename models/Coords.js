@@ -15,4 +15,4 @@ const coordsSchema = new Schema({
 	createdAt: { type: Date, default: Date.now, index: true, expires: '4h' },
 });
 
-module.exports = mongoose.model('Coords', coordsSchema);
+module.exports = { name: 'Coords', schema: coordsSchema }

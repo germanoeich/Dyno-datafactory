@@ -10,4 +10,4 @@ const owUserSchema = new Schema({
 	platform: { type: String, required: true },
 });
 
-module.exports = mongoose.model('OwUser', owUserSchema);
+module.exports = { name: 'OwUser', schema: owUserSchema }

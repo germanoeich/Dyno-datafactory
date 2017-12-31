@@ -11,4 +11,4 @@ const overrideLogSchema = new Schema({
   createdAt: { type: Date, default: Date.now, expires: '7d' },
 });
 
-module.exports = mongoose.model('OverrideLog', overrideLogSchema);
+module.exports =  { name: 'OverrideLog', schema: overrideLogSchema }

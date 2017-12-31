@@ -50,8 +50,13 @@ class DataFactory {
 			.filter(file => (file.indexOf('.') !== 0) && (file !== basename) && (file.slice(-3) === '.js'))
 			.forEach(file => {
 				const model = require(path.join(modelPath, file));
-				this._models[model.modelName] = model;
+				this.registerModel(model);
 			});
+	}
+
+	registerModel({name, schema}) {
+		const model = mongoose.model(name, schema);
+		this._models[model.modelName] = model;
 	}
 
 	get models() {

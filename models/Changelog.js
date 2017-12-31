@@ -9,4 +9,4 @@ const changelogSchema = new Schema({
 	entry: { type: String },
 });
 
-module.exports = mongoose.model('Changelog', changelogSchema);
+module.exports = { name: 'Changelog', schema: changelogSchema }

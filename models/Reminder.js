@@ -12,4 +12,4 @@ const reminderSchema = new Schema({
 	completedAt: { type: Date, required: true, index: true },
 });
 
-module.exports = mongoose.model('Reminder', reminderSchema);
+module.exports = { name: 'Reminder', schema: reminderSchema }

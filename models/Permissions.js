@@ -14,4 +14,4 @@ const permissionSchema = new Schema({
 	commands: { type: Object, default: {} },
 });
 
-module.exports = mongoose.model('Permissions', permissionSchema);
+module.exports = { name: 'Permissions', schema: permissionSchema }

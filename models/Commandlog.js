@@ -11,4 +11,4 @@ const commandLogSchema = new Schema({
   createdAt:   { type: Date, default: Date.now, expires: '7d' },
 });
 
-module.exports = mongoose.model('CommandLog', commandLogSchema);
+module.exports = { name: 'CommandLog', schema: commandLogSchema }

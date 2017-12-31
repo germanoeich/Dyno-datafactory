@@ -10,4 +10,4 @@ const cacheSchema = new Schema({
 	accessedAt: { type: Date, default: Date.now, expires: '24h' },
 });
 
-module.exports = mongoose.model('Cache', cacheSchema);
+module.exports = { name: 'Cache', schema: cacheSchema }

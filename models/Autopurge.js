@@ -10,4 +10,4 @@ const autopurgeSchema = new Schema({
 	nextPurge: { type: Date, default: Date.now, index: true },
 });
 
-module.exports = mongoose.model('Autopurge', autopurgeSchema);
+module.exports = { name: 'Autopurge', schema: autopurgeSchema }

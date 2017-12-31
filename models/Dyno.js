@@ -16,4 +16,4 @@ const dynoSchema = new Schema({
 	ignoredUsers: { type: Array, default: [] },
 }, { strict: false });
 
-module.exports = mongoose.model('Dyno', dynoSchema);
+module.exports = { name: 'Dyno', schema: dynoSchema }
