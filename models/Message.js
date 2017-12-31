@@ -8,4 +8,4 @@ const messageSchema = new Schema({
 	createdAt: { type: Date, default: Date.now(), expires: '4h' },
 }, { strict: false });
 
-module.exports = mongoose.model('Message', messageSchema);
+module.exports = { name: 'Message', schema: messageSchema }

@@ -10,4 +10,4 @@ const channelSchema = new Schema({
 	messages: Number,
 });
 
-module.exports = mongoose.model('Channel', channelSchema);
+module.exports = { name: 'Channel', schema: channelSchema }

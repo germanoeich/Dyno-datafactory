@@ -11,4 +11,4 @@ const warningSchema = new Schema({
 	createdAt:   { type: Date, default: Date.now, expires: '14d' },
 });
 
-module.exports = mongoose.model('Warning', warningSchema);
+module.exports = { name :'Warning', schema: warningSchema }

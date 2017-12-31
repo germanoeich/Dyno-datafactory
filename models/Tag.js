@@ -11,4 +11,4 @@ const tagSchema = new Schema({
 	createdAt:   { type: Date, default: Date.now },
 });
 
-module.exports = mongoose.model('Tag', tagSchema);
+module.exports = { name: 'Tag', schema: tagSchema }

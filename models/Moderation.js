@@ -15,4 +15,4 @@ const moderationSchema = new Schema({
 	completedAt: { type: Date, index: true },
 });
 
-module.exports = mongoose.model('Moderation', moderationSchema);
+module.exports = { name: 'Moderation', schema: moderationSchema }

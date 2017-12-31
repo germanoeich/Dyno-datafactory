@@ -9,4 +9,4 @@ const betaGuildSchema = new Schema({
 	createdAt: { type: Date, default: Date.now },
 });
 
-module.exports = mongoose.model('BetaGuild', betaGuildSchema);
+module.exports = { name: 'BetaGuild', schema: betaGuildSchema }

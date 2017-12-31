@@ -12,4 +12,4 @@ const autoroleSchema = new Schema({
 	createdAt:   { type: Date, default: Date.now, expires: '48h' },
 });
 
-module.exports = mongoose.model('Autorole', autoroleSchema);
+module.exports = { name: 'Autorole', schema: autoroleSchema }

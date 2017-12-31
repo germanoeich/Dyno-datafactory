@@ -10,4 +10,4 @@ const guildLogSchema = new Schema({
   time:   { type: Date, default: Date.now },
 });
 
-module.exports = mongoose.model('GuildLog', guildLogSchema);
+module.exports = { name: 'GuildLog', schema: guildLogSchema }
